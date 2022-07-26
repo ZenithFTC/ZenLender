@@ -1,11 +1,9 @@
 var express = require('express');
-const path = require("path");
-const app = require("../app");
 var router = express.Router();
 
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile(app.dir + '/shop.html')
+    res.render('shop.html', { title: 'Express' });
 });
 
 module.exports = router;
