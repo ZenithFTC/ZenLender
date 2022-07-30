@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZenLender - Shop</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-
+  <script src="javascript/global.js"></script>
 </head>
-<body>
+<body onload="getUsername()">
 
 <!-- Section 1 -->
 <section class="w-full px-6 pb-12 antialiased bg-white" data-tails-scripts="//unpkg.com/alpinejs">
@@ -24,15 +24,15 @@
           <div class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
             <a href="index.html" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">ZenLender<span class="text-indigo-600">.</span></a>
             <div class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
-              <a href="index.html" class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
-              <a href="#_" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Features</a>
-              <a href="#" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Shop</a>
-              <a href="#_" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Contact</a>
+              <a href="index.html" class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-gray-700 md:ml-0 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center rounded-md">Home</a>
+              <a href="#_" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700  md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center rounded-md">Features</a>
+              <a href="#" class="inline-block w-full py-2 mx-0 font-medium text-left text-indigo-600  md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center rounded-md">Shop</a>
+              <a href="#_" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center rounded-md">Contact</a>
 
             </div>
             <div class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
               <a href="#" class="w-full px-3 py-2 mr-0 text-gray-700 md:mr-2 lg:mr-3 md:w-auto">Sign In</a>
-              <a href="#_" class="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-indigo-600 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-indigo-500 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-indigo-600">Sign Up</a>
+              <a href="./signup.html" class="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-indigo-600 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-indigo-500 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-indigo-600">Sign Up</a>
             </div>
           </div>
         </div>
@@ -66,10 +66,11 @@
       <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
         <a href="products/REVCH.html" class="group">
           <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <img src="imagesEV_EAGLE_2.png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
+            <img src="./images/REV_EAGLE_2.png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
           </div>
           <h3 class="mt-4 text-sm text-gray-700">REV Control Hub</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">$247</p>
+          <p class="mt-1 text-lg font-medium text-gray-900">Free <span class="text-gray-400"
+                                                                       style="text-decoration: line-through;">247$</span></p>
         </a>
 
         <a href="#" class="group">
@@ -163,7 +164,7 @@
 <section class="text-gray-700 bg-white body-font">
   <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
     <a href="#_" class="text-xl font-black leading-none text-gray-900 select-none logo">ZenLender<span class="text-indigo-600">.</span></a>
-    <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2021 DevMello - Tailwindcss
+    <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2022 DevMello - Tailwindcss
     </p>
     <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
             <a href="#" class="text-gray-400 hover:text-gray-500">

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ZenLender.iml" filepath="$PROJECT_DIR$/.idea/ZenLender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ZenithDiscordBot/.idea/ZenithDiscordBot.iml" filepath="$PROJECT_DIR$/../ZenithDiscordBot/.idea/ZenithDiscordBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ZenLenderBackend/routes/data/.idea/data.iml" filepath="$PROJECT_DIR$/../ZenLenderBackend/routes/data/.idea/data.iml" />
     </modules>
   </component>
 </project>
