@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tails Downloaded File</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-    <script src="javascript/signin.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="javascript/signup.js"></script>
     <script src="javascript/global.js"></script>
 </head>
 <body onload="getUsername()">
@@ -76,11 +77,13 @@
                             <input type="text" id="email" class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="Enter Your Email Address">
                         </div>
                         <div class="relative">
-                            <label class="font-medium text-gray-900">Discord id</label>
-                            <input type="text" id="discordID" class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="Password">
+                            <label class="font-medium text-gray-900">Discord User ID  </label><i href="./faq.html#discord" class="fa fa-info-circle" ></i>
+                            <label for="discordID"></label><input type="text" id="discordID" class="block w-full px-4 py-4 mt-2 text-xl placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="Password">
+
+
                         </div>
                         <div class="relative">
-                            <a href="#_" onclick="signIn()" class="inline-block w-full px-5 py-4 text-lg font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-700 ease">Create Account</a>
+                            <a href="#_" onclick="signup()" class="inline-block w-full px-5 py-4 text-lg font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-700 ease">Create Account</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +97,7 @@
 <!-- Section 3 -->
 <section class="text-gray-700 bg-white body-font">
     <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
-        <a href="./index.html" class="text-xl font-black leading-none text-gray-900 select-none logo">ZenLender<span class="text-indigo-600">.</span></a>
+        <a href="index.html" class="text-xl font-black leading-none text-gray-900 select-none logo">ZenLender<span class="text-indigo-600">.</span></a>
         <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2022 DevMello - Tailwindcss
         </p>
         <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">

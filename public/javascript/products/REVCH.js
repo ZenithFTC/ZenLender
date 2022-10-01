@@ -2,7 +2,7 @@ let bag;
 function addToCart(event) {
     bag = localStorage.getItem('bag');
     if(localStorage.getItem('loggedIn')==null){
-        window.location.href="../signup.html"
+        window.location.href="../../signup.html"
     }
     if(localStorage.getItem('loggedIn') === "true") {
         if(bag==null){

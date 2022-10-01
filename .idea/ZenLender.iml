@@ -8,8 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="data" />
     <orderEntry type="library" name="axios" level="application" />
-    <orderEntry type="module" module-name="ZenithDiscordBot" />
+    <orderEntry type="library" name="fontawesome-all" level="application" />
   </component>
 </module>
